@@ -115,7 +115,40 @@ hr {
   </style>
   </head>
   
-  <body>
+  <body> 
+   <script>
+    window.onload = function () {
+  const artifacts = document.querySelectorAll('.artifact');
+
+  artifacts.forEach(artifact => {
+    // إعدادات عامة للصندوق
+    artifact.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+    artifact.style.position = 'relative';
+
+    // الوصول إلى الصورة داخل الصندوق
+    const img = artifact.querySelector('img');
+    if (img) {
+      img.style.transition = 'filter 0.3s ease';
+    }
+
+    // عند المرور
+    artifact.addEventListener('mouseenter', () => {
+      artifact.style.transform = 'scale(1.05)';
+      artifact.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
+      artifact.style.zIndex = '10';
+      if (img) img.style.filter = 'brightness(85%)';
+    });
+
+    // عند الخروج
+    artifact.addEventListener('mouseleave', () => {
+      artifact.style.transform = '';
+      artifact.style.boxShadow = '';
+      artifact.style.zIndex = '';
+      if (img) img.style.filter = '';
+    });
+  });
+};
+   </script>
   <section id="umayad"> 
    <h2>الخلافة العباسية </h2> 
    <p>الخلافة العباسية (132هـ - 656هـ / 750م - 1258م) هي ثالث خلافة في الإسلام، قامت بعد سقوط الدولة الأموية، وكان أول خلفائها أبو العباس السفاح. تميزت الخلافة العباسية بازدهار العلم، والفنون، والصناعات، وبلغت فيها الحضارة الإسلامية أوجها، خاصة في عصر هارون الرشيد والمأمون. في هذا العصر، نشأ ما يُعرف بـ الفن الإسلامي الكلاسيكي، وظهرت آثار وتحف تمثل تطورًا كبيرًا في الصناعات والزخرفة والعمار. </p>
