@@ -117,6 +117,39 @@ hr {
   </style>
 </head> 
 <body>
+  <script>
+    window.onload = function () {
+  const artifacts = document.querySelectorAll('.artifact');
+
+  artifacts.forEach(artifact => {
+    // إعدادات عامة للصندوق
+    artifact.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+    artifact.style.position = 'relative';
+
+    // الوصول إلى الصورة داخل الصندوق
+    const img = artifact.querySelector('img');
+    if (img) {
+      img.style.transition = 'filter 0.3s ease';
+    }
+
+    // عند المرور
+    artifact.addEventListener('mouseenter', () => {
+      artifact.style.transform = 'scale(1.05)';
+      artifact.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
+      artifact.style.zIndex = '10';
+      if (img) img.style.filter = 'brightness(85%)';
+    });
+
+    // عند الخروج
+    artifact.addEventListener('mouseleave', () => {
+      artifact.style.transform = '';
+      artifact.style.boxShadow = '';
+      artifact.style.zIndex = '';
+      if (img) img.style.filter = '';
+    });
+  });
+};
+  </script>
    <h2>الخلافة العثمانية</h2> 
    <p>الخلافة العثمانية (1517م - 1924م)
 
