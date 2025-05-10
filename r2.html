@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ar" dir="rtl"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>الحضارة الإسلامية - متحف الحضارات</title> 
+  <link rel="stylesheet" >
+  <style>
+    body {
+  background-color: #D2B48C; /* لون ترابي هادئ */
+  background-image: url("backgroung1.png");
+  background-repeat: repeat;
+  background-size: 100px;
+  font-family: 'Arial', sans-serif;
+  color: #2c2c2c;
+  direction: rtl;
+  text-align: ;
+  padding: 30px;
+}
+
+h2{
+  text-align: center;}
+
+a{
+text-decoration: none;}
+
+
+
+import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+/* إعدادات عامة */
+body {
+  font-family: 'Amiri', serif;
+  background-color: #fdf8ee; /* لون ورق قديم */
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/arabesque.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  color: #3e2f1c; /* بني داكن */
+  direction: rtl;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+/* العنوان الرئيسي */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #8b5e3c;
+  border-bottom: 2px solid #c2a671;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/* العناوين الفرعية */
+h2, h3 {
+  color: #6e4c2c;
+  margin-top: 20px;
+}
+
+/* الفقرات */
+p {
+  margin-bottom: 15px;
+}
+
+/* الكتل الخاصة بالقطع الأثرية */
+.artifact {
+  border: 1px solid #d6c3a2;
+  background-color: #fffaf1;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(139, 94, 60, 0.2);
+}
+
+/* الصور داخل القطع الأثرية */
+.artifact img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  border: 2px solid #c7b299;
+  border-radius: 5px;
+}
+
+/* روابط التنقل */
+a {
+  color: #8b5e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* فاصل زخرفي */
+hr {
+  border: none;
+  border-top: 1px dashed #c2a671;
+  margin: 30px 0;
+}
+
+#backBtn {
+  display: inline-block;
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#backBtn:hover {
+  background-color: #a06a45;
+}
+
+
+
+#backBtn {
+  display: inline-block;
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#backBtn:hover {
+  background-color: #a06a45;
+}
+  </style>
+ </head> 
+ <script>
+    window.onload = function () {
+  alert("مرحبًا بك في صفحة الخلافة الراشدة!");
+};
+
+// 2. تأثير مرور الماوس على التحف
+const artifacts = document.querySelectorAll('.artifact');
+
+artifacts.forEach(function(art) {
+  art.addEventListener('mouseenter', function() {
+    art.style.backgroundColor = '#f3e8d3';
+    art.style.transition = '0.3s';
+  });
+
+  art.addEventListener('mouseleave', function() {
+    art.style.backgroundColor = '#fffaf1';
+  });
+});
+
+// 3. رسالة عند الضغط على زر العودة
+const backBtn = document.querySelector("button a");
+
+backBtn.addEventListener("click", function (e) {
+  const confirmBack = confirm("هل تريد العودة إلى صفحة الحضارة الإسلامية؟");
+  if (!confirmBack) {
+    e.preventDefault(); // يلغي الرجوع إن لم يؤكد المستخدم
+  }
+});
+ </script>
+ 
+ <body> 
+   <h2>الخلافة الراشدة</h2> 
+   <p> 
+     الخلافة الراشدة (11 هـ - 40 هـ / 632 م - 661 م) هي أول خلافة إسلامية بعد وفاة النبي محمد ﷺ، 
+     حكمها أربعة من الصحابة الكبار: أبو بكر الصديق، عمر بن الخطاب، عثمان بن عفان، وعلي بن أبي طالب رضي الله عنهم، 
+     وساروا على نهج النبوة في الحكم والعدل. في هذا العصر، ظهرت معالم حضارية بسيطة لكن مؤثرة، 
+     رغم بساطة العمارة، فإن الآثار في هذا العهد تُعبر عن بداية تأسيس الهوية الإسلامية الحقيقية. 
+   </p> 
+   <hr>
+
+   <div class="artifact"> 
+   <img src="arash1.png" alt="المصحف العثماني" width="300">
+    <h3>المصحف العثماني</h3> 
+    <p> 
+      نسخة من أوائل المصاحف التي جُمعت ونسخت بأمر من الخليفة عثمان بن عفان رضي الله عنه، 
+      لتوحيد الأمة على قراءة واحدة. كُتبت بخط كوفي بسيط على جلد، دون تنقيط أو تشكيل. 
+    </p> 
+    <p>الموقع الحالي: متحف طوب قابي - إسطنبول (نسخ أخرى في القاهرة وسانت بطرسبرغ).</p> 
+   </div> 
+
+   <div class="artifact"> 
+   <img src="sword.png" alt="سيف منسوب إلى علي رضي الله عن" width="300">
+   
+    <h3>سيف منسوب لعلي بن أبي طالب رضي الله عنه</h3> 
+    <p> 
+      سيف عربي قديم يُنسب إلى الإمام علي رضي الله عنه، مصنوع من الحديد، 
+      ومقبضه مزخرف بنقوش عربية بسيطة، يدل على بساطة وقوة السلاح في ذلك الزمن. 
+    </p> 
+   </div> 
+
+   <div class="artifact"> 
+    <img src="nag.png" alt="نقش إسلامي"
+width="300">   
+    <h3>نقش صخري إسلامي قديم (من نقوش الحجاز)</h3> 
+    <p> 
+      نقش بالحجر يحتوي على آيات قرآنية أو أدعية، يعود إلى بدايات الإسلام. 
+      يُظهر استخدام الخط العربي القديم (الجزم أو الكوفي البدائي) في تسجيل العقيدة والتاريخ. 
+    </p> 
+   </div> 
+
+   <div class="artifact"> 
+    <img src="fakh.png" alt="قطعة فخار"
+width="300">  
+    <h3>قطعة فخار منزلية</h3> 
+    <p> 
+      إناء فخاري صغير كان يُستخدم في بيوت المسلمين الأوائل للشرب أو حفظ التمر والماء. 
+      بسيط الشكل، بدون زخرفة، يعكس حياة الزهد والبساطة التي عاشها الصحابة. 
+    </p> 
+   </div> 
+   <hr>
+   
+   
+   
+<a href="Islamic.html" id="backBtn">العودة إلى الحضارة الإسلامية</a>
+
+   
+   
+   
+   </body>
+</html>

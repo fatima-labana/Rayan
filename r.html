@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>الحضارة الإسلامية - متحف الحضارات</title> 
+<link rel="stylesheet">
+<style>
+    body {
+  background-color: #f4e8d1; /* لون ترابي هادئ */
+  background-image: url("backgroung1.png");
+  background-repeat: repeat;
+  background-size: 100px;
+  font-family: 'Arial', sans-serif;
+  color: #2c2c2c;
+  direction: rtl;
+  text-align: center;
+  padding: 30px;
+}
+
+/* عنوان الصفحة */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #4a3f2a;
+}
+
+/* صندوق المقدمة */
+section {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff8ec;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* الحاوية الرئيسية للرابطات */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* كل رابط داخل صندوق */
+nav li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+nav li:hover {
+  transform: scale(1.03);
+}
+
+/* الروابط داخل الصناديق */
+nav a {
+  text-decoration: none;
+  color: #4a3f2a;
+  font-size: 18px;
+  font-weight: bold;
+}
+</style>
+ </head> 
+ 
+ <body> 
+    <script>
+        window.onload = function () {
+  alert("مرحبًا بك في صفحة الحضارة الإسلامية!");
+};
+
+// 2. تأثير المرور على روابط الخلافات
+const links = document.querySelectorAll("nav ul li a");
+
+links.forEach(function (link) {
+  // عند تمرير الماوس
+  link.addEventListener("mouseenter", function () {
+    link.style.backgroundColor = "#e3d3b8";
+    link.style.transition = "0.3s";
+  });
+
+  link.addEventListener("mouseleave", function () {
+    link.style.backgroundColor = "transparent";
+  });
+
+  // عند الضغط، عرض اسم الخلافة
+    </script>
+  <header> 
+   <h1>الحضارة الإسلامية</h1> 
+  </header> 
+  
+  <section> 
+   <h2>مقدمة</h2> 
+   <p> تمتد الحضارة الإسلامية عبر قرون من الزمان، وقد مرت بعدة فترات تاريخية مهمة، تمثّلت في الخلافات الكبرى التي تركت لنا إرثًا غنيًا من العلوم والفنون والتحف المعمارية. في هذا القسم من الموقع، يمكنك استكشاف أبرز التحف والمعالم التي خلّفتها كل خلافة إسلامية. </p> 
+  </section> 
+  
+  
+ 
+
+  
+  <nav> 
+   <ul> 
+    <li><a href="rashidun.html">الخلافة الراشدة</a></li> 
+    <li><a href="umayyad.html">الخلافة الأموية</a></li> 
+    <li><a href="abbasid.html">الخلافة العباسية</a></li> 
+    <li><a href="ottoman.html">الخلافة العثمانية</a></li> 
+  
+   </ul> 
+  </nav> 
+ 
+
+ </body>
+</html>
